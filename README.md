@@ -1,5 +1,4 @@
 # DeepRx: Deep Learning-Based OFDM Receiver
-# DeepRx: Deep Learning-Based OFDM Receiver
 
 ## 📌 Overview
 This project implements **DeepRx**, a deep learning-based receiver for OFDM systems using PyTorch. It provides a robust alternative to traditional receivers by using neural networks for channel estimation and signal detection.
