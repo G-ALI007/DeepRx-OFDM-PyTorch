@@ -1,8 +1,34 @@
 # DeepRx: Deep Learning-Based OFDM Receiver
+# DeepRx: Deep Learning-Based OFDM Receiver
 
-![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)
+## 📌 Overview
+This project implements **DeepRx**, a deep learning-based receiver for OFDM systems using PyTorch. It provides a robust alternative to traditional receivers by using neural networks for channel estimation and signal detection.
 
+## 📊 Performance Results
+
+### 1. BER vs. SNR
+DeepRx outperforms the traditional LMMSE receiver, especially in high SNR scenarios.
+<p align="center">
+  <img src="figures/fig1_ber_vs_snr.png" width="600">
+</p>
+
+### 2. Robustness to Doppler Shift
+The model shows high stability even with high mobility (Doppler shifts up to 500 Hz).
+<p align="center">
+  <img src="figures/fig2_ber_vs_doppler.png" width="600">
+</p>
+
+### 3. Per-Bit Analysis
+Detailed look at the error distribution across 16-QAM bits.
+<p align="center">
+  <img src="figures/fig3_per_bit_ber.png" width="600">
+</p>
+
+## 📂 Files
+* `deeprx_model.py`: Neural network architecture.
+* `ofdm_system.py`: OFDM transmitter and channel simulator.
+* `train.py`: Training pipeline.
+* `evaluate.py` & `plot_results.py`: Tools for testing and visualization.
 ## 📌 Overview
 This repository contains the implementation of **DeepRx**, a Deep Learning-based receiver for Orthogonal Frequency-Division Multiplexing (OFDM) systems built with PyTorch. The project demonstrates how deep neural networks can be utilized for channel estimation, equalization, and signal detection, providing a robust alternative to traditional receivers in physical layer communications.
 
